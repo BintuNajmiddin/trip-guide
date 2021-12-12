@@ -1,0 +1,139 @@
+body {
+  margin: 0;
+}
+*{
+  box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+}
+.explore-icon{
+  margin-right:10px;
+}
+.total.active + .info{
+  display:block
+}
+.total.active .arrow-bottom {
+  transform:rotate(180deg);
+}
+.total{
+  border:none;
+  background-color:transparent;
+  padding:0;
+  font-weight:500;
+  font-size:18px;
+  color:#84878B;
+}
+.service-icon{
+  margin-right:8px;
+}
+.react-tabs__tab--selected {
+  background-color: transparent !important;
+  border: none !important;
+  padding: 0;
+}
+
+.react-tabs__tab-list {
+  border: none !important;
+  margin: 0 !important;
+}
+
+.react-tabs__tab {
+  bottom: 0 !important;
+  padding: 0 !important;
+}
+.react-tabs__tab--selected::before{
+  content: '';
+  position: absolute;
+  bottom: -30px;
+  left: 0;
+  width: 70px;
+  height: 2px;
+  background-color: #316BFF;
+}
+.react-tabs__tab:focus:after {
+  background-color: transparent !important;
+}
+
+.react-tabs__tab:focus {
+  box-shadow: none !important;
+}
+.mrg{
+  margin:13px 0;
+}
+.css-tlfecz-indicatorContainer {
+  display: none !important;
+}
+.css-1okebmr-indicatorSeparator {
+  display: none;
+}
+.css-319lph-ValueContainer {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.css-6j8wv5-Input {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.css-14el2xx-placeholder {
+  margin: 0 !important;
+}
+.css-1s2u09g-control {
+    background-color: transparent !important;
+    border-color: none;
+    border-radius: 4px;
+    border-style: none !important;
+    min-height: 20px !important;
+    outline: 0!important;
+}
+.css-tj5bde-Svg {
+  display: none !important;
+}
+.css-1pahdxg-control {
+  background-color: transparent !important;
+  box-shadow: none !important;
+  min-height: 20px !important;
+  border: none !important;
+  border-color: transparent !important;
+}
+.loader {
+  width:50px;
+  height:50px;
+  display:inline-block;
+  padding:0px;
+  opacity:0.5;
+  border:3px solid #09acfd;
+  -webkit-animation: loader 1s ease-in-out infinite alternate;
+  animation: loader 1s ease-in-out infinite alternate;
+}
+
+.loader:before {
+ content: " ";
+ position: absolute;
+ z-index: -1;
+ top: 5px;
+ left: 5px;
+ right: 5px;
+ bottom: 5px;
+ border: 3px solid #09acfd;
+}
+
+.loader:after {
+ content: " ";
+ position: absolute;
+ z-index: -1;
+ top: 15px;
+ left: 15px;
+ right: 15px;
+ bottom: 15px;
+ border: 3px solid #09acfd;
+}
+
+@keyframes loader {
+  from {transform: rotate(0deg) scale(1,1);border-radius:0px;}
+  to {transform: rotate(360deg) scale(0, 0);border-radius:50px;}
+}
+@-webkit-keyframes loader {
+  from {-webkit-transform: rotate(0deg) scale(1, 1);border-radius:0px;}
+  to {-webkit-transform: rotate(360deg) scale(0,0 );border-radius:50px;}
+}
